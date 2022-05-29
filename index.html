@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    
+    <title>Fileloader</title>
+</head>
+<body>
+    
+
+    <div class="box"> 
+
+        <div class="preview">
+            <label
+                id="prev_id"
+                for="id"
+                class="prev" 
+                style="background-image: url('images/photo.png')"
+                onclick="show_loaded_image('id');" 
+            >
+            </label>
+            <input 
+                id="id"
+                type="file" 
+            >
+        </div>
+
+        <label 
+            id="dele_id" 
+            class="dele"
+            style="background-image: url('images/delete.png')"
+            onclick="mark_deleted_image('id');"
+            >
+        </label>
+
+        <label
+            id="uplo_id"
+            class="uplo" 
+            style="background-image: url('images/download.png')"
+            onclick="show_loaded_image('id');"
+            for="id"
+            >
+        </label>
+    
+    </div>
+    
+
+</body>
+</html>
